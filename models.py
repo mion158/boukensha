@@ -17,8 +17,8 @@ class User(UserMixin, db.Model):
 
     def set_password(self, password):
         self.hashed_password = generate_password_hash(password)
+    
     # check passowrd
-
     def check_password(self, password):
         # return true if there is a match
         return check_password_hash(self.hashed_password, password)
