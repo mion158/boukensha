@@ -1,6 +1,4 @@
-from flask import Flask, render_template, request
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 
