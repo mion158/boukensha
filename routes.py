@@ -66,8 +66,6 @@ def user(username):
         db.session.commit()
     else:
         flash(form.errors)
-        unpopular_songs = Song.query.order_by(Song.n).all()[:3]
-    destinations = Destination.query.all()
     return render_template('user.html', user=user, posts=posts, form=form)
 
 
